@@ -12,7 +12,7 @@ Image is based on Nginx alpine, and all the content is local to the container.
 ![image](https://user-images.githubusercontent.com/4349962/157274069-6196f5cc-6c34-4cd7-bde8-e401cc257607.png)
 
 ## Dual
-![image](https://user-images.githubusercontent.com/4349962/157303682-41cd407b-3160-4517-aa60-a112bc95b895.png)
+![image](https://user-images.githubusercontent.com/4349962/157416791-353edbf9-99c5-4295-aff8-e7f26fd208c9.png)
 
 # Configuration
 
