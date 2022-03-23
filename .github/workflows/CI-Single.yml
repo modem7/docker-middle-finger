@@ -1,4 +1,4 @@
-name: CI Single
+name: Docker build CI Single
 
 on:
   push:

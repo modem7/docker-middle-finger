@@ -1,4 +1,4 @@
-name: CI Dual
+name: Docker build CI Dual
 
 on:
   push:
