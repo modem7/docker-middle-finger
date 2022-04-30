@@ -14,6 +14,10 @@ Image is based on Nginx alpine, and all the content is local to the container.
 ## Dual
 ![image](https://user-images.githubusercontent.com/4349962/157416791-353edbf9-99c5-4295-aff8-e7f26fd208c9.png)
 
+# Breaking change
+Due to changing the image to nginxinc/nginx-unprivileged, the ports have changed from `80` to `8080`. 
+Please update your files accordingly. 
+
 # Configuration
 
 ```bash
@@ -25,7 +29,7 @@ services:
     image: modem7/middle-finger:latest
     container_name: MiddleFinger
     ports:
-      - 80:80
+      - 8080:8080
 ```
 
 # Tags
