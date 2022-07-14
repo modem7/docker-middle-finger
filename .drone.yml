@@ -58,6 +58,21 @@ steps:
         from_secret: docker_password
       tags: dual
 
+  - name: pushrm-dockerhub
+    image: chko/docker-pushrm
+    environment:
+      DOCKER_USER:
+        from_secret: docker_username
+      DOCKER_PASS:
+        from_secret: docker_password
+      PUSHRM_FILE: README.md
+      PUSHRM_SHORT: Dockerised ASCII Middle Finger
+      PUSHRM_TARGET: modem7/middle-finger
+    when:
+      status:
+        - success
+
+
   - name: slack
     image: themaz/drone-slack
     settings:
