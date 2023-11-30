@@ -5,6 +5,8 @@
 [![Build Status](https://drone.modem7.com/api/badges/modem7/docker-middle-finger/status.svg)](https://drone.modem7.com/modem7/docker-middle-finger)
 [![GitHub last commit](https://img.shields.io/github/last-commit/modem7/docker-middle-finger)](https://github.com/modem7/docker-middle-finger)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/modem7)
+
 Image is based on Nginx alpine, and all the content is local to the container.
 
 # Container Screenshot
