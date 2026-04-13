@@ -18,6 +18,7 @@ steps:
 
   - name: single  
     image: thegeeklab/drone-docker-buildx
+    depends_on: [Lint Dockerfile]
     privileged: true
     settings:
       repo: modem7/middle-finger # Dockerhub repo
@@ -39,6 +40,7 @@ steps:
 
   - name: dual  
     image: thegeeklab/drone-docker-buildx
+    depends_on: [Lint Dockerfile]
     privileged: true
     settings:
       repo: modem7/middle-finger # Dockerhub repo
@@ -60,6 +62,7 @@ steps:
 
   - name: pushrm-dockerhub
     image: chko/docker-pushrm
+    depends_on: [single, dual]
     environment:
       DOCKER_USER:
         from_secret: docker_username
