@@ -77,7 +77,7 @@ steps:
 
   - name: slack
     image: themaz/drone-slack
-    depends_on: [single, dual, Lint Dockerfile, pushrm-dockerhub]
+    depends_on: [single, dual]
     settings:
       webhook:
         from_secret: slack_hook
